@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>test-task</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+</head>
+<body>
+
+<div id="container">
+	<header>
+	
+	</header>
+	<div class="wrap">
+		<nav>
+			<ul>
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">О нас</a></li>
+				<li><a href="#">Маршруты</a></li>
+				<li><a href="#">Расписание походов</a></li>
+				<li><a href="#">Инструкторы</a></li>
+				<li><a href="#">Прокат</a></li>
+				<li><a href="#">Отзывы</a></li>
+				<li><a href="#">Полезная информация</a></li>
+				<li><a href="#">Вопросы/Ответы</a></li>
+				<li><a href="#">Новости</a></li>
+			</ul>
+		</nav>
+		<div id="sidebar">
+			<h1>Маршруты</h1>
+			<form action="#">
+				Дата</br>
+				<input id="nn" type="text" placeholder="1.01.16 - 1.03.16"/></br>
+				Место проведения</br>
+				<input type="text" value="Кавказ"/></br>
+				Количество дней</br>
+				<input type="text" placeholder="Выберите количество"/></br>
+				Цена
+				<input type="range" id="price2" min="100" max="2500" value="1800" step="100"></br>
+				<label              id="pr1">100</label>
+				<label for="price2" id="pr2">1800</label></br>
+				<p>Сложность</p>
+				<div>
+					<input type="radio" id="radio1" name="raz" class="radio">
+					<label for="radio1"><p>1</p></label>
+					<input type="radio" id="radio2" checked name="raz" class="radio">
+					<label for="radio2"><p>2</p></label>
+					<input type="radio" id="radio3" name="raz" class="radio">
+					<label for="radio3"><p>3</p></label>
+					<input type="radio" id="radio4" name="raz" class="radio">
+					<label for="radio4"><p>4</p></label>
+					<input type="radio" id="radio5" name="raz" class="radio">
+					<label for="radio5"><p>5</p></label>
+				</div>
+			</form>
+			<img src="resourses/adv.png" width="247px">
+			<h2>Направление походов</h2>
+			<div id="way"></div>
+			<div id="country">
+				<div class="country">
+					<div><img src="resourses/rectangle.png" width="26px"><span>Болгария</span>	</div>
+					<div class="hiddenText">Дополнительная информация</div>
+				</div>
+				<div class="country">
+					<div><img src="resourses/rectangle.png" width="26px"><span>Исландия</span>	</div>
+					<div class="hiddenText">Дополнительная информация</div>
+				</div>
+				<div class="country">
+					<div><img src="resourses/rectangle.png" width="26px"><span>Карпаты</span>	</div>
+					<div class="hiddenText">Дополнительная информация</div>
+				</div>
+			</div>
+		</div>
+		<main>
+			<div id="sel">
+				<select>
+					<option>Самые ближайшые</option>
+					<option>Cамые популярные</option>
+				</select>
+			</div>
+			<div id="main">	
+				<div class="mounth">Март 2016</div>
+				<div class="travel">
+					<table cellspacing="0" cellpadding="0">
+					<tbody>
+					<tr>
+						<td rowspan="6" width="280"><img src="resourses/foto.png" width="247"></td></tr>
+					<tr height="72px">
+						<td colspan="2"><h3>Зимний поход на Поп-Иван Черногорский</h3><h3></h3></td>
+						<td class="td1">$1200</td>
+					</tr>
+					<tr height="26px">
+						<td colspan="3" class="td2"><img src="resourses/calendar.png" height="12"> 19.02.16-21.02.16</td>
+					</tr>
+					<tr height="73px">
+						<td width="220px" class="td3">Продолжительность:<br>Длина похода:<br>Сложность: <img src="resourses/inform.png " height="10px"></td>
+						<td width="111px" class="td4">3 дня (2 ночи)<br>20км<br><span>1 2 3 <b>4</b> 5</span></td>
+						<td width="182px"><div align="right" class="buttonDetail">Подробнее</div></td>
+					</tr>
+					</tbody>
+					</table>
+				</div>
+			</div>
+		</main>
+	</div>
+	<footer>
+
+	</footer>
+</div>
+
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
