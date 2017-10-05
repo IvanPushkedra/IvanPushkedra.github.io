@@ -144,13 +144,11 @@ table h3 {
 	line-height:23px;
 	color:#000000;
 }
-.td4 span {
-	color:#7B7B7B;
+.tdimg {
+	width:280px;
 }
-.td4 span b {
-	display:inline;
-	font-size:14px;
-	color:#FF00FF;
+table:first-child  + tr {
+	height:72px;
 }
 .td1 {
 	text-align:right;
@@ -160,15 +158,27 @@ table h3 {
 	color:#2D8EFD;
 }
 .td2 {
+	height:26px;
 	color:#3E3E3E;
 }
 .td3 {
+	height:73px;
+	width:220px;
 	color:#7B7B7B;
 	line-height:21px;
 }
 .td4 {
+	width:111px;
 	text-align:right;
 	line-height:21px;
+}
+.td4 span {
+	color:#7B7B7B;
+}
+.td4 span b {
+	display:inline;
+	font-size:14px;
+	color:#FF00FF;
 }
 .buttonDetail {
 	width:138px;
