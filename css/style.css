@@ -180,6 +180,9 @@ table:first-child  + tr {
 	font-size:14px;
 	color:#FF00FF;
 }
+.td5 {
+	 width:182px;
+}
 .buttonDetail {
 	width:138px;
 	height:30px;
