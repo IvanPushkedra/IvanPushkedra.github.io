@@ -1,0 +1,22 @@
+version: 0.2
+
+env:
+  variables:
+    bucket_name: "medicall-migration"
+    LC_CTYPE: "C.UTF-8"
+    #cloudfront_distribution_id: "E10GQXPX7YHHWD"
+
+phases:
+  install:
+    commands:
+      - jekyll --version
+      - bundler --version
+      - gem install jekyll jekyll-paginate jekyll-sitemap jekyll-gist bundler
+      - bundle install
+  build:
+    commands:
+
+      - jekyll build
+
+  post_build:
+    commands:

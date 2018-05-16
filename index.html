@@ -1,87 +1,53 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>test-task</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+---
+layout: default
+base_layout: front-page
+---
 
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+<div itemprop="mainContentOfPage" id="front-page">
 
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript" src="resourses/data.json"></script><!-- data for main -->
+  <section id="find-treatment">
+    <div class="container forms-container">
+      <div class="background-img">
+        <img src="images/banners/homebann.jpg"/>
+      </div>
 
-</head>
-<body>
+      <div class="main-col col-md-3 col-xs-7">
+        <h1>{{ site.data.home.title }}</h1>
+      </div>
 
-<div id="container">
-	<header>
-	
-	</header>
-	<div class="wrap">
-		<nav>
-			<ul>
-				<li><a href="#">Главная</a></li>
-				<li><a href="#">О нас</a></li>
-				<li><a href="#">Маршруты</a></li>
-				<li><a href="#">Расписание походов</a></li>
-				<li><a href="#">Инструкторы</a></li>
-				<li><a href="#">Прокат</a></li>
-				<li><a href="#">Отзывы</a></li>
-				<li><a href="#">Полезная информация</a></li>
-				<li><a href="#">Вопросы/Ответы</a></li>
-				<li><a href="#">Новости</a></li>
-			</ul>
-		</nav>
-		<div id="sidebar">
-			<h1>Маршруты</h1>
-			<form action="#">
-				Дата</br>
-				<input id="nn" type="text" placeholder="1.01.16 - 1.03.16"/></br>
-				Место проведения</br>
-				<input type="text" value="Кавказ"/></br>
-				Количество дней</br>
-				<input type="text" placeholder="Выберите количество"/></br>
-				Цена
-				<input type="range" id="price2" min="100" max="2500" value="1800" step="100"></br>
-				<label              id="pr1">100</label>
-				<label for="price2" id="pr2">1800</label></br>
-				<p>Сложность</p>
-				<div>
-					<input type="radio" id="radio1" name="raz" class="radio">
-					<label for="radio1"><p>1</p></label>
-					<input type="radio" id="radio2" checked name="raz" class="radio">
-					<label for="radio2"><p>2</p></label>
-					<input type="radio" id="radio3" name="raz" class="radio">
-					<label for="radio3"><p>3</p></label>
-					<input type="radio" id="radio4" name="raz" class="radio">
-					<label for="radio4"><p>4</p></label>
-					<input type="radio" id="radio5" name="raz" class="radio">
-					<label for="radio5"><p>5</p></label>
-				</div>
-			</form>
-			<img src="resourses/adv.png" width="247px">
-			<h2>Направление походов</h2>
-			<div id="way"></div>
-			<div id="country">
-		
-			</div>
-		</div>
-		<main>
-			<div id="sel">
-				<select>
-					<option>Самые ближайшые</option>
-					<option>Cамые популярные</option>
-				</select>
-			</div>
-			<div id="main">	
-			</div>
-		</main>
-	</div>
-	<footer>
+      <div class="homepage-form hidden-sm hidden-xs">
+        {% include form.html %}
+      </div>
+    </div>
+  </section>
 
-	</footer>
+  <section id="here-for-you">
+    <div class="container">
+
+      <div class="text-wrapper">
+        <p>{{ site.data.home.about.p1 }}</p>
+        <p>{{ site.data.home.about.p2 }}</p>
+        <h2>{{ site.data.home.about.title }}</h2>
+      </div>
+
+      <div class="promoted-links-wrapper">
+        {% include homepage-promoted-links.html %}
+      </div>
+
+    </div>
+  </section>
+
+  <section id="articles">
+    <div class="container">
+      <div class="articles-title text-center">
+        <h2>{{ site.data.home.about.guides }}</h2>
+        <p>{{ site.data.home.about.prolog }}</p>
+      </div>
+      <div class="categories-wrapper">
+        {% include categories.html %}
+      </div>
+      {% include homepage-teasers.html %}
+    </div>
+  </section>
+  {% include related-content-links.html %}
 </div>
-
-<script type="text/javascript" src="js/script.js"></script>
-</body>
-</html>
