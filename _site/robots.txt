@@ -1,7 +1,0 @@
-Sitemap: https://dental.medicart.co.il/sitemap.xml
-
-User-agent: * 
-
-Disallow: /thx
-Disallow: /טיפולי-שיניים-מחירים
-
